@@ -2,7 +2,7 @@
 
 int main()
 {
-int n,sum=0,pro=1,r;
+int n,sum=0,pro=1,r,diff;
 printf("Enter any Number:");
 scanf("%d",&n);
 while(n>0)
@@ -12,7 +12,7 @@ sum=sum+r;
 pro=pro*r;
 n=n/10 ;
 }
-printf("Sum of Digits:%d\n",sum); 
-printf("product of Digits:%d",pro); 
+diff=pro-sum;
+printf("%d",diff);
 return 0;
 }
